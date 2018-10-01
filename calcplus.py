@@ -6,8 +6,7 @@ import calcoohija
 
 
 if __name__ == "__main__":
-
-    lectura = open('documento.txt', 'r')  # ponemos modo lectura el fichero
+    lectura = open(sys.argv[1], 'r')  # ponemos modo lectura el fichero
     fichero = lectura.readlines()  # devuelve una lista a cada linea
 
     mical = calcoohija.CalculadoraHija()
@@ -47,4 +46,4 @@ if __name__ == "__main__":
         else:
             sys.exit('Se ha confundido, ingrese de nuevo')
 
-lectura.close  # al terminar la lectura cerramos el fichero
+lectura.close  # para terminar la lectura cerramos el fichero
